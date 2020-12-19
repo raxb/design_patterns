@@ -9,7 +9,7 @@ public class MexicanCheesePizza extends Pizza {
     }
 
     @Override
-    public void cut(){
+    public void cut() {
         System.out.println("Cutting in diamonds...");
     }
 }
