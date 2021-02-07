@@ -49,7 +49,9 @@ Structural Patterns let you compose classes and objects into larger structures
 
 Pattern Definitions:
 
-1. Strategy Pattern - categorizes logical functionality separately and encapsulates each, so that client could invoke
+1. <a href="https://github.com/raxb/design_patterns/tree/master/src/learn/patterns/strategy">Strategy Pattern </a>- 
+   categorizes logical functionality separately and encapsulates each, so that client 
+   could invoke
    the same polymorphically during the runtime.
     - Abstraction
     - Encapsulation
@@ -57,57 +59,59 @@ Pattern Definitions:
     - Inheritance
     - Composition
 
-2. Observer Pattern - when the Publisher state changes all the underlying Subscriber(s) will be updated with the state
+2. <a href="https://github.com/raxb/design_patterns/tree/master/src/learn/patterns/observer">Observer Pattern </a>- when the Publisher state changes all the underlying Subscriber(s) will be updated with 
+   the state
    changes, if and only if the Subscriber(s) registered with Publisher for updates.
 
-3. Decorator Pattern - by making the classes implement an identical interface/abstract class, objects can be wrapped
+3. <a href="https://github.com/raxb/design_patterns/tree/master/src/learn/patterns/decorator">Decorator Pattern </a>- by making the classes implement an identical interface/abstract class, objects can be wrapped
    with new functionalities dynamically.
 
-4. Factory Method Pattern - create an abstract class with abstract factory method, which will be responsible for object
+4. <a href="https://github.com/raxb/design_patterns/tree/master/src/learn/patterns/factory">Factory Method Pattern </a>- create an abstract class with abstract factory method, which will be responsible for object
    creation in the subclasses. Superclass method can call the abstract factory method which gets defined based on
    subclass object creation.
    'Object creation - Inheritance'
 
-5. Abstract Factory Pattern - create an interface with methods, so that the concrete implementation classes performs the
+5. <a href="https://github.com/raxb/design_patterns/tree/master/src/learn/patterns/abstractfactory">Abstract Factory Pattern </a>- create an interface with methods, so that the concrete implementation classes performs the
    objects' creation for each method. These methods are in-turn Factory Method Pattern.
    'Object Creation - Composition'
 
-6. Singleton Pattern - class with Private Constructor, Private Static variable and Public Static method to return the
+6. <a href="https://github.com/raxb/design_patterns/tree/master/src/learn/patterns/singleton">Singleton Pattern </a>- class with Private Constructor, Private Static variable and Public Static method to return the
    single global instance. Further, making the Static variable Volatile and creating Synchronized block in Static method
    retains single object on multiple threads access. Yet Singleton Pattern breaks when multiple classloaders are in
    play.
 
-7. Command Pattern - decouples an object making the request from the one that performs actions on the request. Receiver
+7. <a href="https://github.com/raxb/design_patterns/tree/master/src/learn/patterns/command">Command Pattern </a>- decouples an object making the request from the one that performs actions on the request. Receiver
    encapsulates set of actions, so Client could call the Invoker to invoke the exposed Receiver method (with actions) by
    parameterizing/dynamically passing on the respective Receiver.
 
-8. Adapter Pattern - receives the interface that the Client expects and translates the request to another interface that
+8. <a href="https://github.com/raxb/design_patterns/tree/master/src/learn/patterns/adapter">Adapter Pattern </a>- receives the interface that the Client expects and translates the request to another interface that
    is Vendor compatible. Decouples Client and Vendor however Adapter complexity is directly proportional to the
    interface complexity Achieved via Object Composition.
 
-9. Facade Pattern - Unified set of more complex classes for performing sequence of operations by delegating
+9. <a href="https://github.com/raxb/design_patterns/tree/master/src/learn/patterns/facade">Facade Pattern </a>- Unified set of more complex classes for performing sequence of operations by delegating
    responsibility to the corresponding components in the subsystems.
 
-10. Template Method Pattern - abstract class with a final method defining the skeleton of algorithm and deferring some
+10. <a href="https://github.com/raxb/design_patterns/tree/master/src/learn/patterns/templatemethod">Template Method Pattern </a>- abstract class with a final method defining the skeleton of algorithm and deferring some
     steps to the subclasses by making it abstract, so that implementation resides with subclasses. Further, with hooks
     in abstract class, the subclasses have the ability to 'hook into' the algorithm at various points.
 
-11. Iterator Pattern - access the elements of Collection object without exposing its underlying representation.
+11. <a href="https://github.com/raxb/design_patterns/tree/master/src/learn/patterns/iterator">Iterator Pattern </a>- access the elements of Collection object without exposing its underlying representation.
     Decouples the Collection object from a traversal and iteration operations. By extending Iteration interface the any
     custom aggregate object can be made iterable.
 
-12. Composite Pattern - by making both the composite and leaf nodes of the same interface/abstract type, we can apply
+12. <a href="https://github.com/raxb/design_patterns/tree/master/src/learn/patterns/composite">Composite Pattern </a>- by making both the composite and leaf nodes of the same interface/abstract type, we can apply
     generic operations over both composites and individual objects. i.e, recursive same type iterations (composites with
     leaf nodes)
 
-13. State Pattern - behaviors encapsulated in state objects and context manages the sequence of operations by
+13. <a href="https://github.com/raxb/design_patterns/tree/master/src/learn/patterns/state">State Pattern </a>- behaviors encapsulated in state objects and context manages the sequence of operations by
     initializing the state and as code flow progresses the state changes and context delegates the same across
     functionalities defined. State transition can be controlled by the State classes or by the Context classes.
 
-14. Proxy Pattern - create Client-Server stub with Remote RMI interface which acts as a proxy invoking methods on this
+14. <a href="https://github.com/raxb/design_patterns/tree/master/src/learn/patterns/proxy">Proxy Pattern </a>- create Client-Server stub with Remote RMI interface which acts as a proxy invoking methods on this
     proxy stubs performs remote calls to the server and returns serializable objects.
 
-15. Compound Pattern - combination of multiple patterns as a design solution. MVC is a Compound Pattern, with Model
+15. <a href="https://github.com/raxb/design_patterns/tree/master/src/learn/patterns/compound">Compound Pattern </a>- combination of multiple patterns as a design solution. MVC is a Compound Pattern, 
+    with Model
     defined as Observer Pattern - for notifying the observers on state changes. View defined as Composite Pattern -
     usually comprising nested UI layout components. Controller defined as Strategy Pattern - dynamically the View can
     use the Controller for different behaviors.
